@@ -16,6 +16,6 @@ class PostController extends Controller
 
     public function show($post){
         $SonglePost = Post::findOrFail($post);
-        return view('show', ['posts' => $SonglePost]);
+        return view('show', ['post' => $SonglePost]);
     }
 }
